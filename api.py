@@ -1,5 +1,5 @@
 import pickle
-
+import os
 import pandas as pd
 from flask import Flask, jsonify, render_template
 
@@ -42,4 +42,5 @@ def predictID(ID):
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    port = int(os.getenv('PORT'))
+    app.run(debug=False, port= port)
