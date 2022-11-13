@@ -42,5 +42,4 @@ def predictID(ID):
 
 
 if __name__ == "__main__":
-    port = int(os.getenv('PORT'))
-    app.run(debug=False, port= port)
+    app.run(debug=True)
