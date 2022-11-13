@@ -7,6 +7,7 @@ from flask import Flask, jsonify, render_template
 
 #%% Set up environment
 app = Flask(__name__)
+server = Flask(__name__)
 
 
 def predict_func(id, data_pred, data, model):
